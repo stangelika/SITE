@@ -18,6 +18,10 @@ export default function Home() {
       <Head>
         <title>Тесты кинооптики и кинокамер</title>
         <meta name="description" content="Галерея тестов кинооптики и кинокамер" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="theme-color" content="#181818" />
       </Head>
       <main>
         <h1 className="title">Тесты кинооптики и кинокамер</h1>
@@ -31,6 +35,11 @@ export default function Home() {
           min-height: 100vh;
           color: #eee;
           font-family: 'Montserrat', 'Arial', sans-serif;
+          padding: 1rem;
+        }
+        main {
+          max-width: 1200px;
+          margin: 0 auto;
         }
         .title {
           font-size: 2.5rem;
@@ -43,6 +52,19 @@ export default function Home() {
           margin-top: 3rem;
           text-align: center;
           letter-spacing: 0.05em;
+        }
+        @media (max-width: 768px) {
+          .title {
+            font-size: 1.8rem;
+            margin: 1rem 0 0.5rem 0;
+          }
+          .subtitle {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+          }
+          .container {
+            padding: 0.5rem;
+          }
         }
       `}</style>
     </div>
